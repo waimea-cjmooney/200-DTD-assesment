@@ -15,4 +15,4 @@ This project is a system that allows users to upload pictures and discussions so
 
 All of the initial design for the system can be found [here](Design.md)
 
-Testing of features and further design revisions can be found [here]()
+Testing of features and further design revisions can be found [here](testing.md)
