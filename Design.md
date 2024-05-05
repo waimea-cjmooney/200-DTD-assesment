@@ -13,11 +13,15 @@ Assessment Standards: **91892** and **91893**
 
 ### Identified Need or Problem
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+Cat enthusiasts love sharing cat photos online, however it is often found annoying by non-cat owners. Having a dedi-***cat***-ed website would not only hide the photos from people who wish not to view them, but also allow for easier access to the photos.
 
 ### End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+Cat enthusiasts come from all walks of life, and can be young or old. This means that any system must use clear and simple language, and be suitable for people of any age. It should be accessible in terms of colours and fonts used. 
+
+The level of IT expertise of the users could vary from high to very low. This means that the system must be very intuitive to use. 
+
+Cat spotters love cats, so the system should be nicely designed, possibly with a cat theme.
 
 ### Proposed Solution
 
