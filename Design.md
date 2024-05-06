@@ -25,36 +25,48 @@ Cat spotters love cats, so the system should be nicely designed, possibly with a
 
 ### Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
-
+I will make a safe website for people to share cat photos and discuss topics surrounding them. The system will include; Photo uploading, commenting, passwords on posts, and post editing.
 
 -------------------------------------------------
 
 ## Relevant Implications
 
-### IMPLICATION NAME HERE
+### Usability
 
-Replace this text with a clear explanation of what the implication means.
+The usability implications of a digital technology or digital outcome (e.g. a website) relate to how easy it is to use for the end-user, without the need for help or guidance.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+This website will need to be usable by anyone, this means it must be simple, easy to understand, and use.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will need to consider what devices people will use on this website and try to make it easy to use. This could mean font size and colour, contrast, and the size of images and posts.
 
-### IMPLICATION NAME HERE
+### Functionality
 
-Replace this text with a clear explanation of what the implication means.
+The functionality implications of a digital technology or digital outcome (e.g. a website) relate to how well it works for the end-user, in terms of meeting its intended purpose.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+The website must be functional for users, otherwise the website would be useless.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I will need to consider the database and how the system interacts with it (e.g. uploading photos from the website to the database.)
 
-### IMPLICATION NAME HERE
+### Aesthetics
 
-Replace this text with a clear explanation of what the implication means.
+The aesthetic implications of a digital technology or digital outcome (e.g. a website) relate to how it looks in terms of design.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Most users will not use a website if it doesn't look up to their standards. Aesthetics can also help with usability.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+The website should be pleasing to look at while still remaining easy to look at and figure out.
+
+### End-Users
+
+The end-user implications of a digital technology or digital outcome (e.g. a website) are connected to the specific needs of the end-user(s).
+
+Since the people using the website will all be from different backgrounds, tech experiences, and devices, the website must be simple yet intuitive.
+
+To do this I must consider the simplicity and layout while also keeping the functionality, I must also make sure that the website works with most devices and the built-in functions of the browser (e.g. Chrome's translate website function)
+
+### Intellectual Property
+
+The intellectual property (IP) implications of a digital technology or digital outcome (e.g. a website) relate to not infringing on the IP of others, in terms of copyright, trade marks, patents, etc..
+
 
 
 -------------------------------------------------
