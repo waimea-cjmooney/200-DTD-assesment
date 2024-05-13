@@ -67,7 +67,7 @@ To do this I must consider the simplicity and layout while also keeping the func
 
 The intellectual property (IP) implications of a digital technology or digital outcome (e.g. a website) relate to not infringing on the IP of others, in terms of copyright, trade marks, patents, etc..
 
-
+Since this is a website about sharing photos
 
 -------------------------------------------------
 
