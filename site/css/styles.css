@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER ****************************************************/
+
+header {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(103, 58, 107);
+    border-bottom: 1px solid slategrey;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+/* MAIN ****************************************************/
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+main a.active {
+    color: rgb(255, 127, 249);
+    text-decoration: underline;
+}
+
+
+
+
+
+/* NAV ****************************************************/
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav a.active {
+    color: rgb(255, 127, 249);
+    text-decoration: underline;
+}
+
+
+/* LISTS ****************************************************/
+
+ul {
+    list-style: none;
+    padding: none;
+    width: max-content;
+    margin: 1rem auto;
+    
+}
+
+ul li {
+    margin-bottom: 0.3rem;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    background-color: rgb(103, 58, 107);
+    border-radius: 2rem;
+    justify-content: space-between;
+}
+
+ul li a {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover{
+    background-color: rgb(255, 127, 249);
+    color: white;
+}
+
+
+
+.p5{
+    color: rgb(255, 124, 124); 
+    border-radius: 1rem;
+}
+
+.p4{
+    color: rgb(255, 207, 135); 
+    border-radius: 1rem;
+}
+
+.p3{
+    color: rgb(247, 255, 129); 
+    border-radius: 1rem;
+}
+
+.p2{
+    color: rgb(153, 255, 144); 
+    border-radius: 1rem;
+}
+
+.p1{
+    color: rgb(155, 252, 255); 
+    border-radius: 1rem;
+}
+
+.completedHeading{
+    display: flex;
+    justify-content: center;
+}
+
+#section{
+    display: flex;
+    gap: 2rem;
+}
+
+#game-list{
+    margin-bottom: 0.3rem;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(103, 58, 107);
+    border-radius: 0.3rem;
+}
+
+#employee-list{
+    margin-bottom: 0.3rem;
+    width: 75%;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(103, 58, 107);
+    border-radius: 0.3rem;
+}
+
+
+
+/* TABLES ****************************************************/
+
+table{
+    margin-bottom: 0.3rem;
+    width: max-content;
+    margin: 1rem auto;
+    justify-content: space-between;
+    gap: 1rem;
+    border-collapse: seperate;
+    border-color: slategray;
+    border-radius: 0.3rem;
+    background-color: rgb(103, 58, 107);
+    
+}
+
+td a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+td a:hover {
+    color: rgb(255, 127, 249);
+    text-decoration: underline;
+}
+
+table, th, td {
+    
+    padding: 15px;
+    
+    text-align: center;
+ }
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+
+ /* FORMS ****************************************************/
+
+form {
+    width: max-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgb(103, 58, 107);
+    border-radius: 0.3rem;
+}
+
+#priority{
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    color: white;
+}
+
+input, select {
+    display: block;
+    font-size: inherit;
+}
+
+input[ type = 'radio' ]{
+    font-size: inherit;
+}
+
+input:not(:last-child) select :not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+#Add-button {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-color: slategray;
+}
+
+#Add-button a {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    border-radius: 3rem;
+    color: white;
+}
+
+/* FOOTER ****************************************************/
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid slategrey;
+    background-color:  rgb(103, 58, 107);
+    font-size: 0.8rem;
+    color: slategrey;
+}
