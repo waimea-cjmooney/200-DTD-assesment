@@ -1,6 +1,6 @@
-# Demo 200DTD Assesment
+# 200DTD Assesment
 
-Demo level 2 NCEA Assesment project
+Cat photo website level 2 NCEA Assesment project
 
 ## Purpose
 
@@ -8,11 +8,14 @@ This project is a system that allows users to upload pictures and discussions su
 
 ## Features
 
-- Allows users to upload photos and discussions about their cats
+- Allows users to upload photos and discussions about their cats using posts
 - Allows users to comment on and view posts
 
-## System design
 
-All of the initial design for the system can be found [here](Design.md)
+## Documentation
 
-Testing of features and further design revisions can be found [here](testing.md)
+The following documents support this project:
+
+- [Design & Review](Design.md)
+- [Development & Testing](Development.md)
+
