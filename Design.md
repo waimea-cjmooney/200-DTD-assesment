@@ -67,7 +67,9 @@ To do this I must consider the simplicity and layout while also keeping the func
 
 The intellectual property (IP) implications of a digital technology or digital outcome (e.g. a website) relate to not infringing on the IP of others, in terms of copyright, trade marks, patents, etc..
 
-Since this is a website about sharing photos
+Since this is a website about sharing photos I must be weary of the photos that I personally put onto the website.
+
+To do this I must look into every photo I personally put onto the website, this means I should try and keep my own photos/logos on the website and not other people's.
 
 -------------------------------------------------
 
