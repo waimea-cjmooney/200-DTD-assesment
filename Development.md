@@ -11,11 +11,11 @@ Assessment Standards: **91892** and **91893**
 
 ## Design, Development and Testing Log
 
-### DATE HERE
+### 20/5/24
 
-Replace this test with what you are working on
+![Flowchart V1](developmentImages/FlowchartV1.png)
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Today I worked on the general flowchart of the website. 
 
 ### DATE HERE
 
