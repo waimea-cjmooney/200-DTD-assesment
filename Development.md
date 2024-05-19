@@ -13,9 +13,11 @@ Assessment Standards: **91892** and **91893**
 
 ### 20/5/24
 
+Today I worked on the general flowchart of the website. I sent a screenshot of this version to Jess for requested changes that she wanted.
+
 ![Flowchart V1](developmentImages/FlowchartV1.png)
 
-Today I worked on the general flowchart of the website. 
+
 
 ### DATE HERE
 
