@@ -21,7 +21,7 @@ Cat enthusiasts come from all walks of life, and can be young or old. This means
 
 The level of IT expertise of the users could vary from high to very low. This means that the system must be very intuitive to use. 
 
-Cat spotters love cats, so the system should be nicely designed, possibly with a cat theme.
+Cat sharers love cats, so the system should be nicely designed, possibly with a cat theme.
 
 ### Proposed Solution
 
