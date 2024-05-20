@@ -1,8 +1,8 @@
 # Development of a Database-Linked Website for NCEA Level 2
 
-Project Name: **PROJECT NAME HERE**
+Project Name: **Cat Photos Website**
 
-Project Author: **YOUR NAME HERE**
+Project Author: **Corban Mooney**
 
 Assessment Standards: **91892** and **91893**
 
