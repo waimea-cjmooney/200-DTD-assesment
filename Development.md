@@ -25,11 +25,13 @@ I edited the flowchart again to include some things i accidentally missed the fi
 
 ![Flowchart V2](developmentImages/FlowchartV2.png)
 
-### DATE HERE
+### 27/05/24
 
-Replace this test with what you are working on
+I started working on my Figma design today and finished it, I will show to Jess when I can
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+https://www.figma.com/proto/JuS6LVzlTDKlWxS2UnK0gt/Catphotos-V1?node-id=1-2&t=9iJhGVR19RBiWzj3-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2
+
+![Alt text](developmentImages/FigmaDesign1.png)
 
 ### DATE HERE
 
