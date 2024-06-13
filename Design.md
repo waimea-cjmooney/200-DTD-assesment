@@ -13,7 +13,7 @@ Assessment Standards: **91892** and **91893**
 
 ### Identified Need or Problem
 
-Cat enthusiasts love sharing cat photos online, however it is often found annoying by non-cat owners. Having a dedi-***cat***-ed website would not only hide the photos from people who wish not to view them, but also allow for easier access to the photos.
+Cat enthusiasts love sharing cat photos online, however it is often found annoying by non-cat owners. Having a dedi-***cat***-ed website would not only hide the photos from people who wish not to view them, but also allow for easier access to the photos for the people who want them.
 
 ### End-User Requirements
 
@@ -21,7 +21,7 @@ Cat enthusiasts come from all walks of life, and can be young or old. This means
 
 The level of IT expertise of the users could vary from high to very low. This means that the system must be very intuitive to use. 
 
-Cat sharers love cats, so the system should be nicely designed, possibly with a cat theme.
+Cat photo sharers love cats, so the system should be nicely designed, possibly with a cat theme.
 
 ### Proposed Solution
 
@@ -37,7 +37,7 @@ The usability implications of a digital technology or digital outcome (e.g. a we
 
 This website will need to be usable by anyone, this means it must be simple, easy to understand, and use.
 
-I will need to consider what devices people will use on this website and try to make it easy to use. This could mean font size and colour, contrast, and the size of images and posts.
+I will need to consider what devices people will use on this website and try to make it easy to use. This could mean font size and colour, contrast, and the size of images and posts. I will make references back to Nielsen's usability heuristics to make my website as usable as possible.
 
 ### Functionality
 
@@ -45,7 +45,7 @@ The functionality implications of a digital technology or digital outcome (e.g. 
 
 The website must be functional for users, otherwise the website would be useless.
 
-I will need to consider the database and how the system interacts with it (e.g. uploading photos from the website to the database.)
+I will need to consider the database and how the system interacts with it (e.g. uploading photos from the website to the database.) I will do lots of testing to make sure that there isn't anything broken.
 
 ### Aesthetics
 
@@ -53,7 +53,7 @@ The aesthetic implications of a digital technology or digital outcome (e.g. a we
 
 Most users will not use a website if it doesn't look up to their standards. Aesthetics can also help with usability.
 
-The website should be pleasing to look at while still remaining easy to look at and figure out.
+The website should be pleasing to look at while still remaining easy to look at and figure out. I will work with my end-user to make sure the website looks both up to date, and cool.
 
 ### End-Users
 
@@ -77,7 +77,7 @@ To do this I must look into every photo I personally put onto the website, this 
 
 ### Database Structure
 
-Place a image here that shows the *final design* of your database: tables, fields and relationships.
+![Database diagram showing the relationship and structure between the posts and the comments.](developmentImages/DatabaseStructure.png)
 
 ### User Interface Design
 
