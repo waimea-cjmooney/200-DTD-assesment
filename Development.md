@@ -31,13 +31,13 @@ I started working on my Figma design today and finished it, I will show to Jess 
 
 https://www.figma.com/proto/JuS6LVzlTDKlWxS2UnK0gt/Catphotos-V1?node-id=1-2&t=9iJhGVR19RBiWzj3-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2
 
-![Alt text](developmentImages/FigmaDesign1.png)
+![Figma design showing the first draft of the UI](developmentImages/FigmaDesign1.png)
 
-### DATE HERE
+### 13/06/24
 
-Replace this test with what you are working on
+It's been a while since my last update because of sickness, but today I worked on the Development.md file to fit Mr Copley's requests. I also ended up adding colour to the figma design, It's not finalised but I like it. I sent the design to jess and await a response.
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+![Coloured version of the UI design](DevelopmentImages/FigmaDesign1Colour.png)
 
 ### DATE HERE
 
