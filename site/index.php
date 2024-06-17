@@ -27,8 +27,8 @@ consoleLog($Uploads);
 foreach ($Uploads as $post) {
 
     echo  '<li>';
-    $Hinh = "<img src='data:image/jpeg;base64,{" . $post['photo'] . "}' alt=\"Cat Image\">";
-    echo  $Hinh;
+    
+    echo  $post['photo'];
 
     echo  '<a href = item.php?id=' . $post['id'] . '>';
     echo  $post['title']; 
