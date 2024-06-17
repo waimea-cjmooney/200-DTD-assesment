@@ -27,7 +27,7 @@ consoleLog($Uploads);
 foreach ($Uploads as $post) {
 
     echo  '<li>';
-    echo  $post['priority'];
+    echo  $post['photo'];
 
     echo  '<a href = item.php?id=' . $post['id'] . '>';
     echo  $post['title']; 
@@ -35,7 +35,6 @@ foreach ($Uploads as $post) {
 
 }
 
-echo '</ul>';
 
 
 
