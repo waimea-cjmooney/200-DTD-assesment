@@ -22,7 +22,7 @@ catch (PDOException $e) {
 }
 
 // See what we get back
-consoleLog($Uploads)
+consoleLog($Uploads);
 
 foreach ($Uploads as $post) {
 
