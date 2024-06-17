@@ -29,7 +29,7 @@ foreach ($Uploads as $post) {
     echo  '<li>';
     
     $en=base64_encode($post['photo']);
-    $mime='image';
+    $mime=$post['title'];
     $binary_data='data:' . $mime . ';base64,' . $en ;
     ?>
 
