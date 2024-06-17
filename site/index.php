@@ -2,13 +2,6 @@
 require '_functions.php';
 include 'partials/top.php'; 
 
-
-echo '<h2> 
-        <span class="completedHeading">
-            Not Completed
-        </span> 
-      </h2>';
-
 // Connect to database
 $db = connectToDB();
 consoleLog($db);
@@ -47,11 +40,5 @@ echo '</ul>';
 
 
 include 'partials/bottom.php'; 
-
-echo '<div id = "Add-button">
-        <a href = "form-item.php">
-            Add
-        </a>
-     </div>';
 
 ?>
