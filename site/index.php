@@ -29,11 +29,7 @@ catch (PDOException $e) {
 }
 
 // See what we get back
-consoleLog($Uploads);
-
-
-echo '<ul id="ToDo">';
-
+consoleLog($Uploads)
 
 foreach ($Uploads as $post) {
 
@@ -42,7 +38,7 @@ foreach ($Uploads as $post) {
 
     echo  '<a href = item.php?id=' . $post['id'] . '>';
     echo  $post['title']; 
-    echo  '</a>';
+    echo  '</a></li>';
 
 }
 
