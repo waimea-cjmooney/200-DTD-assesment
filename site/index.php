@@ -28,7 +28,13 @@ foreach ($Uploads as $post) {
 
     echo  '<li>';
     
-    echo  $post['photo'];
+    $en=base64_encode($post['photo']);
+    $mime='image/gif';
+    $binary_data='data:' . $mime . ';base64,' . $en ;
+    ?>
+
+    <img src=”<?php echo $binary_data; ?>” alt=”Test”>
+    <?php
 
     echo  '<a href = item.php?id=' . $post['id'] . '>';
     echo  $post['title']; 
