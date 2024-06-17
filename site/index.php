@@ -13,14 +13,14 @@ echo '<h2>
 $db = connectToDB();
 consoleLog($db);
 
-// Set up a query to get all company info
-$query = 'SELECT * FROM ToDoList WHERE completed LIKE "0" ORDER BY priority DESC';
+// Set up a query to get all uploads
+$query = 'SELECT * FROM Uploads';
 
 // Attempt to run the query
 try {
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $ToDoList = $stmt->fetchAll();
+    $Uploads = $stmt->fetchAll();
 }
 
 catch (PDOException $e) {
@@ -29,79 +29,25 @@ catch (PDOException $e) {
 }
 
 // See what we get back
-consoleLog($ToDoList);
+consoleLog($Uploads);
 
 
 echo '<ul id="ToDo">';
 
 
-foreach ($ToDoList as $item) {
+foreach ($Uploads as $post) {
 
-    echo  '<li> <span class="priority p' . $item['priority'] . '">';
-    echo  $item['priority'];
-    echo  '    </span>';
+    echo  '<li>';
+    echo  $post['priority'];
 
-
-    echo  '<a href = item.php?id=' . $item['id'] . '>';
-    echo  $item['name']; 
+    echo  '<a href = item.php?id=' . $post['id'] . '>';
+    echo  $post['title']; 
     echo  '</a>';
-
-    echo '<a href="complete-item.php?id=' . $item['id'] . '" onclick="return confirm(`Complete task?`);">✕</a>';
-    echo '</a>';
-    echo '<a href="delete-item.php?id=' . $item['id'] . '" onclick="return confirm(`Delete task?`);">🗑</a>';
-    echo '</a> </li>';
 
 }
 
 echo '</ul>';
 
-echo '<h2> 
-        <span class="completedHeading">
-            Completed
-        </span> 
-      </h2>';
-
-// Set up a query to get all company info
-$query = 'SELECT * FROM ToDoList WHERE completed LIKE "1" ORDER BY priority DESC';
-
-// Attempt to run the query
-try {
-    $stmt = $db->prepare($query);
-    $stmt->execute();
-    $completed = $stmt->fetchAll();
-}
-
-catch (PDOException $e) {
-    consoleLog($e->getMessage(), 'DB List Fetch', ERROR);
-    die('There was an error getting data from the database');
-}
-
-// See what we get back
-consoleLog($completed);
-
-
-echo '<ul id="Done">';
-
-
-foreach ($completed as $itemC) {
-
-    echo  '<li> <span class="priority p' . $itemC['priority'] . '">';
-    echo  $itemC['priority'];
-    echo  '</span>';
-
-    echo  '<a href = item.php?id=' . $itemC['id'] . '>';
-    echo  $itemC['name']; 
-    echo  '</a>';
-
-    echo '<a href="complete-item.php?id=' . $itemC['id'] . '" onclick="return confirm(`Undo complete task?`);">✓</a>';
-    echo '</a>';
-
-    echo '<a href="delete-item.php?id=' . $itemC['id'] . '" onclick="return confirm(`Delete task?`);">🗑</a>';
-    echo '</a> </li>';
-
-}
-
-echo '</ul>';
 
 
 include 'partials/bottom.php'; 
