@@ -30,11 +30,45 @@ catch (PDOException $e) {
 if ($post == false) die('Item with this id: ' . $postId . ' does not exist.');
 
 
-
+echo $post['uploaded'];
 echo '<h2> ' . $post['title'] . '</h2>';
 echo '<img src="load-thing-image.php?id=' . $post['id'] . '">';
-echo '<br>'
-echo $post['descript'];
+echo '<br>';
+echo '<h3>' . $post['descript'] . '</h3>';
+
+
+
+
+// Set up a query to get all comments
+$query = 'SELECT code, words, cDate FROM Comments WHERE id = ?';
+
+// Attempt to run the query
+try {
+    $stmt = $db->prepare($query);
+    $stmt->execute([$postId]);
+    $comments = $stmt->fetchAll();
+}
+
+catch (PDOException $e) {
+    consoleLog($e->getMessage(), 'DB List Fetch', ERROR);
+    die('There was an error getting data from the database');
+}
+
+// See what we get back
+consoleLog($comments);
+
+foreach ($comments as $comment) {
+
+    echo  '<li>';
+
+    echo  'Anonymous ' . $comment['cDate'];
+    echo  '<br>';
+    echo  $comment['words'];
+
+    echo  '</a></li>';
+    echo  '<br>';
+
+}
 
 
 include 'partials/bottom.php';
