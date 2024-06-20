@@ -33,6 +33,7 @@ if ($post == false) die('Item with this id: ' . $postId . ' does not exist.');
 
 echo '<h2> ' . $post['title'] . '</h2>';
 echo '<img src="load-thing-image.php?id=' . $post['id'] . '">';
+echo '<br>'
 echo $post['descript'];
 
 
