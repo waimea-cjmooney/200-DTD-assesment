@@ -28,7 +28,7 @@ foreach ($Uploads as $post) {
 
     echo  '<li>';
     echo  '<a href = item.php?id=' . $post['id'] . '>';
-    echo  '<img src="load-thing-image.php?id=' . $thing['id'] . '">';
+    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '">';
     echo  $post['title']; 
     echo  '</a></li>';
 
