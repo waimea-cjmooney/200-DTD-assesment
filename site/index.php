@@ -7,7 +7,7 @@ $db = connectToDB();
 consoleLog($db);
 
 // Set up a query to get all uploads
-$query = 'SELECT * FROM Uploads';
+$query = 'SELECT id, title, uploaded, descript FROM Uploads';
 
 // Attempt to run the query
 try {
@@ -27,16 +27,8 @@ consoleLog($Uploads);
 foreach ($Uploads as $post) {
 
     echo  '<li>';
-    
-    $en=base64_encode($post['photo']);
-    $mime=$post['title'];
-    $binary_data='data:' . $mime . ';base64,' . $en ;
-    ?>
-
-    <img src=”<?php echo $binary_data; ?>” alt=”Test”>
-    <?php
-
     echo  '<a href = item.php?id=' . $post['id'] . '>';
+    echo  '<img src="load-thing-image.php?id=' . $thing['id'] . '">';
     echo  $post['title']; 
     echo  '</a></li>';
 
