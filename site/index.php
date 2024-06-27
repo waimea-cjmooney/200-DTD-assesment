@@ -7,7 +7,7 @@ $db = connectToDB();
 consoleLog($db);
 
 // Set up a query to get all uploads
-$query = 'SELECT id, title, uploaded, descript FROM Uploads';
+$query = 'SELECT id, title, uploaded, descript FROM Uploads ORDER BY uploaded DESC';
 
 // Attempt to run the query
 try {
@@ -23,6 +23,9 @@ catch (PDOException $e) {
 
 // See what we get back
 consoleLog($Uploads);
+
+echo   '<a href = "formPost.php">New Post</a>';
+
 
 foreach ($Uploads as $post) {
 

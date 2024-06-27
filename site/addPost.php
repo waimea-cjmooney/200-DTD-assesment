@@ -1,6 +1,9 @@
 <?php
 require_once 'lib/utils.php';
 
+
+$date = date("Y/m/d");
+
 //----------------------------------------------------------------------------
 
 consoleLog($_POST, 'POST');
@@ -29,12 +32,12 @@ $description = $_POST['descript'];
 $db = connectToDB();
 
 $query = 'INSERT INTO Uploads
-            (title, descript, image_type, image_data uploaded) 
-            VALUES (?, ?, ?, ?, ?)';
+            (title, descript, image_type, image_data, uploaded, pass) 
+            VALUES (?, ?, ?, ?, ?, ?)';
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$name, $description, $imageType, $imageData, date("Y/m/d")]);
+    $stmt->execute([$name, $description, $imageType, $imageData, $date, '123ABC']);
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Upload Picture', ERROR);

@@ -32,11 +32,9 @@ if ($post == false) die('Item with this id: ' . $postId . ' does not exist.');
 
 echo $post['uploaded'];
 echo '<h2> ' . $post['title'] . '</h2>';
-echo '<img src="load-thing-image.php?id=' . $post['id'] . '">';
+echo '<img src="load-thing-image.php?id=' . $postId . '">';
 echo '<br>';
 echo '<h3>' . $post['descript'] . '</h3>';
-
-
 
 
 // Set up a query to get all comments
@@ -56,6 +54,25 @@ catch (PDOException $e) {
 
 // See what we get back
 consoleLog($comments);
+
+
+// Comments
+?>
+
+<form method = 'post' action = <?php echo 'addComment.php?id=' . $postId ?>>
+
+       <input name = 'words'
+              type = 'text' 
+              placeholder = 'Comment' 
+              required>
+
+       <input type="submit" 
+              value="Submit">
+
+</form>
+
+<?php
+
 
 foreach ($comments as $comment) {
 
