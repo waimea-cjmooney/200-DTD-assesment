@@ -15,12 +15,17 @@ include 'partials/top.php';
               required>
 
        <label>Description</label>
-       <textarea name = 'descript'  
+       <textarea name = 'descript'
               required></textarea>
 
        <input type = "file" 
               name = "image" 
               accept = "image/*" 
+              required>
+
+       <label>Password</label>
+       <input name = 'password'
+              type = 'text' 
               required>
 
        <input type="submit" 

@@ -1,5 +1,5 @@
-
-<?php 
+<?php
+ 
 require '_functions.php';
 include 'partials/top.php'; 
 
@@ -14,7 +14,7 @@ consoleLog($_POST, 'POST Data');
 //Get form data
 $words     = $_POST['words']; 
 $cDate     = date("Y/m/d");
-$password  = '123ABC';
+$password  = $_POST['password'];
 
 
 // Connect to database
@@ -41,4 +41,6 @@ echo '<p>Success<p>';
 
 header('location: viewPost.php?id=' . $postId);
 
-include 'partials/bottom.php'; ?>
+include 'partials/bottom.php'; 
+
+?>

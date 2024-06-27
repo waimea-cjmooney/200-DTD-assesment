@@ -2,6 +2,8 @@
 require '_functions.php';
 include 'partials/top.php'; 
 
+
+
 // Connect to database
 $db = connectToDB();
 consoleLog($db);
@@ -26,6 +28,7 @@ consoleLog($Uploads);
 
 echo   '<a href = "formPost.php">New Post</a>';
 
+echo '<ul id="post-list">';
 
 foreach ($Uploads as $post) {
 
@@ -34,14 +37,16 @@ foreach ($Uploads as $post) {
     echo  '<a href = viewPost.php?id=' . $post['id'] . '>';
 
     echo  '<img src="load-thing-image.php?id=' . $post['id'] . '">';
-    echo  $post['title'];
+    echo  '<h2>' . $post['title'] . '<h2>';
+    echo  '<h4>Uploaded ' . $post['uploaded'] . '<h4>';
+    
 
     echo  '</a></li>';
 
 }
 
 
-
+echo '</ul>';
 
 include 'partials/bottom.php'; 
 

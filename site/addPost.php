@@ -22,8 +22,9 @@ if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file
 //----------------------------------------------------------------------------
 // Get other data from form via the $_POST super-global.
 
-$name = $_POST['title'];
-$description = $_POST['descript'];
+$name         = $_POST['title'];
+$description  = $_POST['descript'];
+$password     = $_POST['password'];
 
 
 //----------------------------------------------------------------------------
@@ -37,7 +38,7 @@ $query = 'INSERT INTO Uploads
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$name, $description, $imageType, $imageData, $date, '123ABC']);
+    $stmt->execute([$name, $description, $imageType, $imageData, $date, $password]);
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Upload Picture', ERROR);
