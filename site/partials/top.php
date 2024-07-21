@@ -1,7 +1,5 @@
-
-<?php require_once '_config.php'; ?>
-
-<?php
+<?php 
+require_once '_config.php';
 
 $page = basename($_SERVER['SCRIPT_NAME']);
 
@@ -18,7 +16,7 @@ $page = basename($_SERVER['SCRIPT_NAME']);
 <body>
     
     <header>
-        <h1> <?= SITE_NAME ?> </h1>
+        <h1> <a href = 'index.php'><?= SITE_NAME ?></a> </h1>
 
         <nav>
             <a href = 'index.php'     class='<?= $page=='index.php'     ? 'active' : '' ?>'>Home</a>

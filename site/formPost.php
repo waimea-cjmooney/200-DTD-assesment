@@ -1,8 +1,9 @@
 <?php 
-require '_functions.php';
+require 'lib/utils.php';
 include 'partials/top.php'; 
 ?>
 
+<a href="index.php">Back</a> <br>
 
 <h2>New Post</h2>
 

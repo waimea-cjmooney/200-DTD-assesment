@@ -1,6 +1,6 @@
 <?php
 
-require '_functions.php';
+require 'lib/utils.php';
 include 'partials/top.php';
 
 $postId = $_GET['id'] ?? '';
@@ -24,18 +24,22 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-if ($post == false) die('Item with this id: ' . $postId . ' does not exist.');
-
+if ($post == false) die('Post with id: ' . $postId . ' does not exist.');
 
 
 echo '<a href="index.php">Back</a> <br>';
 
+
+
+echo '<ul id="post-list">';
+
 echo $post['uploaded'];
-echo '<h2> ' . $post['title'] . '</h2>';
+echo '<h2> ' . $post['title'] . '<a href="formReport.php?id=' . $postId . '">⚑</a> </h2>';
 echo '<img src="load-thing-image.php?id=' . $postId . '"><br>';
 echo '<h3>' . $post['descript'] . '</h3>';
 
 
+echo '</ul>';
 
 
 

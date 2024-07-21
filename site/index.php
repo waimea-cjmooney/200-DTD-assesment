@@ -1,5 +1,5 @@
 <?php 
-require '_functions.php';
+require 'lib/utils.php';
 include 'partials/top.php'; 
 
 
@@ -32,16 +32,16 @@ echo '<ul id="post-list">';
 
 foreach ($Uploads as $post) {
 
-    echo  '<li>';
-
     echo  '<a href = viewPost.php?id=' . $post['id'] . '>';
 
-    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '">';
-    echo  '<h2>' . $post['title'] . '<h2>';
-    echo  '<h4>Uploaded ' . $post['uploaded'] . '<h4>';
-    
+    echo  '<li>';
 
-    echo  '</a></li>';
+    echo  '<h4>Uploaded ' . $post['uploaded'] . '<h4>';
+
+    echo  '<h2>' . $post['title'] . '<h2>';
+    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '">';
+
+    echo  '</li></a>';
 
 }
 

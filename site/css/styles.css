@@ -28,6 +28,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: #FFE6B8;
+    color: #2F4123;
     border-bottom: none;
 }
 
@@ -35,6 +36,11 @@ header h1 {
     margin: 0;
     font-size: 1.6rem;
     font-weight: normal;
+}
+
+header a {
+    color: #2F4123;
+    text-decoration: none;
 }
 
 /* MAIN ****************************************************/
@@ -54,7 +60,9 @@ main a:hover {
 }
 
 
-
+h2 a{
+    color: #B7DE7C;
+}
 
 
 /* NAV ****************************************************/
@@ -74,10 +82,6 @@ nav a:hover {
     color: white;
 }
 
-nav a.active {
-    color: rgb(255, 127, 249);
-    text-decoration: underline;
-}
 
 
 /* LISTS ****************************************************/
@@ -92,24 +96,23 @@ ul {
 
 ul li {
     margin-bottom: 0.3rem;
-    display: flex;
+    display: block;
     width: 100%;
     gap: 1rem;
-    background-color: rgb(103, 58, 107);
-    border-radius: 2rem;
+    background-color: #FFE6B8;
+    border-radius: 0.3rem;
     justify-content: space-between;
 }
 
 ul li a {
     display: block;
-    padding: 0.2rem 0.5rem;
+
     border-radius: 0.3rem;
     color: white;
     text-decoration: none;
 }
 
 ul li:hover{
-    background-color: rgb(255, 127, 249);
     color: white;
 }
 
@@ -147,34 +150,30 @@ ul li:hover{
 
 #section{
     display: flex;
-    gap: 2rem;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 
 #post-list{
+    display: block;
     margin-bottom: 0.3rem;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0rem;
-    background-color: rgb(103, 58, 107);
+    background-color: #FFE6B8;
     border-radius: 0.3rem;
+    list-style-type: none;
+    margin-left: 0rem;
 }
 
-#employee-list{
-    margin-bottom: 0.3rem;
+
+
+#post-list img{
+    display: block;
+    object-fit: cover;
+    height: 75%;
     width: 75%;
-    justify-content: space-between;
-    gap: 1rem;
-    background-color: rgb(103, 58, 107);
     border-radius: 0.3rem;
 }
-
 
 
 /* TABLES ****************************************************/
@@ -221,8 +220,26 @@ form {
     width: max-content;
     margin: 1rem auto;
     padding: 1rem;
-    background-color: rgb(103, 58, 107);
+    background-color: #FFE6B8;
     border-radius: 0.3rem;
+}
+
+form label{
+    color: #2F4123;
+}
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background-color: #FFF0EB;
+    color: #2F4123;
+    outline: none;
+    border: 2px solid #2F4123;
+}
+input[type=text]:focus{
+    border: 3px solid #B7DE7C;
 }
 
 #priority{
@@ -247,9 +264,6 @@ input[ type = 'radio' ]{
 input:not(:last-child) select :not(:last-child) {
     margin-bottom: 1rem;
 }
-
-
-
 
 
 #Add-button {
