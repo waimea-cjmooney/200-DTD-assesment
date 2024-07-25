@@ -19,10 +19,15 @@ include 'partials/top.php';
        <textarea name = 'descript'
               required></textarea>
 
-       <input type = "file" 
+       
+       <label>Upload File</label>
+       <input hidden
+              id = 'file-upload'
+              type = "file" 
               name = "image" 
               accept = "image/*" 
-              required>
+              required
+              >
 
        <label>Password</label>
        <input name = 'password'

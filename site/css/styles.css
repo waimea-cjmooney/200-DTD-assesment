@@ -2,27 +2,35 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
+    padding: auto;
 }
 
 body {
+    display: block;
     background-color: #FFF0EB;
     color: #2F4123;
     margin: 0;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
+@media screen and (max-width: 640px)
+{
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
 
 /* HEADER ****************************************************/
 
 header {
     position: sticky;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,8 +54,10 @@ header a {
 /* MAIN ****************************************************/
 
 main {
+    align-items: center;
     flex: 1;
     padding: 1rem;
+    max-width: 600px;
 }
 
 main a {
@@ -55,15 +65,18 @@ main a {
     text-decoration: none;
 }
 
-main a:hover {
+h2 a{
+    color: #B7DE7C;
     text-decoration: none;
 }
 
-
-h2 a{
-    color: #B7DE7C;
+.new-post a{
+    text-decoration: none;
 }
 
+.new-post a:hover{
+    text-decoration: underline;
+}
 
 /* NAV ****************************************************/
 
@@ -73,13 +86,13 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #2F4123;
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: white;
+    color: #2F4123;
 }
 
 
@@ -114,6 +127,7 @@ ul li a {
 
 ul li:hover{
     color: white;
+    text-decoration: none;
 }
 
 
@@ -162,17 +176,62 @@ ul li:hover{
     background-color: #FFE6B8;
     border-radius: 0.3rem;
     list-style-type: none;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+#post-view{
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    justify-content: center;
+    gap: 0rem;
+    background-color: #FFE6B8;
+    border-radius: 0.3rem;
+    list-style-type: none;
     margin-left: 0rem;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+#post-list img{
+    display: flex;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 0.3rem;
+}
+
+#post-view img{
+    display: flex;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+#post-list a :hover{
+    background-color: #B7DE7C;
+    color: #2F4123;
+    text-decoration: none;
 }
 
 
 
-#post-list img{
-    display: block;
-    object-fit: cover;
-    height: 75%;
-    width: 75%;
-    border-radius: 0.3rem;
+#new-post {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-color: slategray;
+}
+
+#new-post a {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    border-radius: 3rem;
+    color: white;
 }
 
 
@@ -184,7 +243,7 @@ table{
     margin: 1rem auto;
     justify-content: space-between;
     gap: 1rem;
-    border-collapse: seperate;
+    border-collapse: separate;
     border-color: slategray;
     border-radius: 0.3rem;
     background-color: rgb(103, 58, 107);
@@ -199,7 +258,6 @@ td a{
 
 td a:hover {
     color: rgb(255, 127, 249);
-    text-decoration: underline;
 }
 
 table, th, td {
@@ -217,7 +275,7 @@ td:first-child, th:first-child {
  /* FORMS ****************************************************/
 
 form {
-    width: max-content;
+    width: 100%;
     margin: 1rem auto;
     padding: 1rem;
     background-color: #FFE6B8;
@@ -228,8 +286,9 @@ form label{
     color: #2F4123;
 }
 
-input{
-    padding: 12px 20px;
+input[type=text], input[type=email]{
+    width: auto;
+    height: 2rem;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 0.3rem;
@@ -238,8 +297,41 @@ input{
     outline: none;
     border: 2px solid #2F4123;
 }
+
+input[type=submit]{
+    width: auto;
+    height: 2rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background-color: #FFF0EB;
+    color: #2F4123;
+    outline: none;
+    border: 2px solid #2F4123;
+}
+
+textarea{
+    width: auto;
+    height: auto;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background-color: #FFF0EB;
+    color: #2F4123;
+    outline: none;
+    border: 2px solid #2F4123;
+    font-size: inherit;
+    resize: none;
+}
+
 input[type=text]:focus{
     border: 3px solid #B7DE7C;
+}
+
+input[type=file]::file-selector-button{
+    border: 3px solid #2F4123;
+    padding: 6px 12px;
+    border-radius: 0.3rem;
+    background-color: #FFF0EB;
 }
 
 #priority{
@@ -265,32 +357,13 @@ input:not(:last-child) select :not(:last-child) {
     margin-bottom: 1rem;
 }
 
-
-#Add-button {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    border-color: slategray;
-}
-
-#Add-button a {
-    display: flex;
-    height: 3rem;
-    width: 3rem;
-    justify-content: center;
-    align-items: center;
-    background-color: slategray;
-    border-radius: 3rem;
-    color: white;
-}
-
 /* FOOTER ****************************************************/
 
 footer {
     padding: 1rem;
     text-align: center;
-    border-top: 1px solid slategrey;
-    background-color:  rgb(103, 58, 107);
+    border-top: 1px solid #2F4123;
+    background-color:  #FFE6B8;
     font-size: 0.8rem;
-    color: slategrey;
+    color: #2F4123;
 }

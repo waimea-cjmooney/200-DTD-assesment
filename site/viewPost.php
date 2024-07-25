@@ -31,7 +31,7 @@ echo '<a href="index.php">Back</a> <br>';
 
 
 
-echo '<ul id="post-list">';
+echo '<ul id="post-view">';
 
 echo $post['uploaded'];
 echo '<h2> ' . $post['title'] . '<a href="formReport.php?id=' . $postId . '">⚑</a> </h2>';

@@ -50,12 +50,14 @@ echo '<a href="viewPost.php?id=' . $postId . '">Back</a> <br>';
 
 <?php
 
+echo '<ul id="post-view">';
+
 echo $post['uploaded'];
 echo '<h2> ' . $post['title'] . '</h2>';
 echo '<img src="load-thing-image.php?id=' . $postId . '"><br>';
 echo '<h3>' . $post['descript'] . '</h3>';
 
-
+echo '</ul>';
 
 
 
