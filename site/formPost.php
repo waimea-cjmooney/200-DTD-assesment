@@ -31,7 +31,7 @@ include 'partials/top.php';
 
        <label>Password</label>
        <input name = 'password'
-              type = 'text' 
+              type = 'password' 
               required>
 
        <input type="submit" 

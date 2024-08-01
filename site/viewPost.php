@@ -33,8 +33,11 @@ echo '<a href="index.php">Back</a> <br>';
 
 echo '<ul id="post-view">';
 
-echo $post['uploaded'];
-echo '<h2> ' . $post['title'] . '<a href="formReport.php?id=' . $postId . '">⚑</a> </h2>';
+echo '<div id="postViewDate">' . $post['uploaded'];
+echo '<div id="postLinks"> <a href="formReport.php?id=' . $postId . '" title="Report">⚑</a> 
+                           <a href="formEditPost.php?id=' . $postId . '" title="Edit">✎</a> 
+                           <a href="formDeletePost.php?id=' . $postId . '" title="Delete" style="font-weight: bolder;" >🗑</a></div>';
+echo '<h2> ' . $post['title'] . '</h2>';
 echo '<img src="load-thing-image.php?id=' . $postId . '"><br>';
 echo '<h3>' . $post['descript'] . '</h3>';
 
@@ -73,30 +76,44 @@ consoleLog($comments);
                required>
 
         <input name = 'password'
-               type = 'text' 
+               type = 'password' 
                placeholder = 'Password' 
-               required>
+               required
+               oninvalid="this.setCustomValidity('A password is required')"
+               oninput="this.setCustomValidity('')">
 
         <input type="submit" 
                value="Submit">
 
 </form>
 
+
+
 <?php
+
 
 
 foreach ($comments as $comment) {
 
     echo  '<li>';
 
-    echo  'Anonymous ' . $comment['cDate'];
+    echo  '<ul id="comment">';
+
+    echo  '<img src="images/User.png" style="height: 1rem; width: 1rem;">';
+    echo  ' Anonymous ' . $comment['cDate'];
+    echo  '<br>';
+    echo  '<a href="formCommentReport.php?id=' . $comment['code'] . '" title="Report">⚑</a>
+           <a href="formCommentEdit.php?id='   . $comment['code'] . '" title="Edit"  >✎</a>
+           <a href="formDeletePost.php?id='    . $comment['code'] . '" title="Delete"
+           style="font-weight: bolder;" >🗑</a>';
     echo  '<br>';
     echo  $comment['words'];
 
-    echo  '</a></li>';
-    echo  '<br>';
+    echo  '</a></ul></li>';
 
 }
+
+
 
 
 include 'partials/bottom.php';

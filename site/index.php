@@ -9,7 +9,7 @@ $db = connectToDB();
 consoleLog($db);
 
 // Set up a query to get all uploads
-$query = 'SELECT id, title, uploaded, descript FROM Uploads ORDER BY uploaded DESC';
+$query = 'SELECT id, title, uploaded, descript FROM Uploads ORDER BY id DESC';
 
 // Attempt to run the query
 try {
