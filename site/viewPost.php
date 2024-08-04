@@ -104,7 +104,7 @@ foreach ($comments as $comment) {
     echo  '<br>';
     echo  '<a href="formCommentReport.php?id=' . $comment['code'] . '" title="Report">⚑</a>
            <a href="formCommentEdit.php?id='   . $comment['code'] . '" title="Edit"  >✎</a>
-           <a href="formDeletePost.php?id='    . $comment['code'] . '" title="Delete"
+           <a href="formDeleteComment.php?code='    . $comment['code'] . '" title="Delete"
            style="font-weight: bolder;" >🗑</a>';
     echo  '<br>';
     echo  $comment['words'];
