@@ -109,7 +109,7 @@ foreach ($comments as $comment) {
     echo  '<br>';
     echo  $comment['words'];
 
-    echo  '</a></ul></li>';
+    echo  '</ul></li>';
 
 }
 
