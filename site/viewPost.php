@@ -33,10 +33,11 @@ echo '<a href="index.php">Back</a> <br>';
 
 echo '<ul id="post-view">';
 
-echo '<div id="postViewDate">' . $post['uploaded'];
-echo '<div id="postLinks"> <a href="formReport.php?id=' . $postId . '" title="Report">⚑</a> 
-                           <a href="formEditPost.php?id=' . $postId . '" title="Edit">✎</a> 
-                           <a href="formDeletePost.php?id=' . $postId . '" title="Delete" style="font-weight: bolder;" >🗑</a></div>';
+echo '<p>' . $post['uploaded'] . '</p>';
+echo '<div id="postLinks" style="display: flex;"> 
+                           <a href="formReport.php?id='     . $postId . '" title="Report"> <img src="images/report.png" style="width: 24px; border-radius: 0px;" > </a> 
+                           <a href="formEditPost.php?id='   . $postId . '" title="Edit">   <img src="images/edit.png"   style="width: 20px; border-radius: 0px; padding: 0px 2px 2px 0px;" > </a> 
+                           <a href="formDeletePost.php?id=' . $postId . '" title="Delete"> <img src="images/trash.png"  style="width: 17px; border-radius: 0px;" > </a></div>';
 echo '<h2> ' . $post['title'] . '</h2>';
 echo '<img src="load-thing-image.php?id=' . $postId . '"><br>';
 echo '<h3>' . $post['descript'] . '</h3>';
@@ -102,14 +103,13 @@ foreach ($comments as $comment) {
     echo  '<img src="images/User.png" style="height: 1rem; width: 1rem;">';
     echo  ' Anonymous ' . $comment['cDate'];
     echo  '<br>';
-    echo  '<a href="formCommentReport.php?id=' . $comment['code'] . '" title="Report">⚑</a>
-           <a href="formCommentEdit.php?id='   . $comment['code'] . '" title="Edit"  >✎</a>
-           <a href="formDeleteComment.php?code='    . $comment['code'] . '" title="Delete"
-           style="font-weight: bolder;" >🗑</a>';
+    echo  '<a href="formCommentReport.php?id='   . $comment['code'] . '&id=' . $postId . '" title="Report"> <img src="images/report.png" style="width: 24px; background-color: transparent; border-radius: 0px;" > </a>
+           <a href="formCommentEdit.php?id='     . $comment['code'] . '&id=' . $postId . '" title="Edit"  > <img src="images/edit.png"   style="width: 17px; background-color: transparent; border-radius: 0px; padding-left: 0px;" > </a>
+           <a href="formDeleteComment.php?code=' . $comment['code'] . '&id=' . $postId . '" title="Delete" > <img src="images/trash.png"  style="width: 17px; background-color: transparent; border-radius: 0px;" ></a>';
     echo  '<br>';
     echo  $comment['words'];
 
-    echo  '</a></ul></li>';
+    echo  '</ul></li>';
 
 }
 

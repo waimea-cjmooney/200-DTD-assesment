@@ -36,10 +36,10 @@ foreach ($Uploads as $post) {
 
     echo  '<li>';
 
-    echo  '<h4>Uploaded ' . $post['uploaded'] . '<h4>';
+    echo  '<h4>Uploaded ' . $post['uploaded'] . '</h4>';
 
-    echo  '<h2>' . $post['title'] . '<h2>';
-    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '">';
+    echo  '<h2>' . $post['title'] . '</h2>';
+    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '" alt="Lamborghini Aventador Supervelocce Roadster">';
 
     echo  '</li></a>';
 

@@ -4,11 +4,12 @@ require 'lib/utils.php';
 include 'partials/top.php'; 
 
 $commentCode = $_GET['code'] ?? '';
+$postId = $_GET['id'] ?? '';
 
+echo $postId;
+echo '<h2>Deleting</h2>';
 
-echo '<h2>Commenting</h2>';
-
-
+consoleLog($commentCode, $postId, 'get');
 consoleLog($_POST, 'POST Data');
 
 //Get form data
@@ -19,12 +20,12 @@ $password  = $_POST['Password'];
 $db = connectToDB();
 
 // Set up a query to get all company info
-$query = 'DELETE FROM Comments WHERE code=? AND password=?';
+$query = 'DELETE FROM Comments WHERE code=? AND cPass=?';
 
 // Attempt to run the query
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute( [ $commentCode] );
+    $stmt->execute( [ $commentCode, $password ] );
     $item = $stmt->fetchAll();
 }
 
@@ -35,7 +36,8 @@ catch (PDOException $e) {
 
 echo '<p>Success<p>';
 
-header('location: index.php');
+
+header('location: viewPost.php?id='.$postId);
 
 include 'partials/bottom.php'; 
 

@@ -13,11 +13,14 @@ include 'partials/top.php';
        <input name = 'title'
               type = 'text' 
               placeholder = 'e.g. My cat' 
+              maxlength="50"
               required>
 
        <label>Description</label>
        <textarea name = 'descript'
-              required></textarea>
+              required
+              maxlength="250">
+       </textarea>
 
        
        <label>Upload File</label>
@@ -31,7 +34,8 @@ include 'partials/top.php';
 
        <label>Password</label>
        <input name = 'password'
-              type = 'password' 
+              type = 'password'
+              maxlength="25" 
               required>
 
        <input type="submit" 

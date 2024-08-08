@@ -9,6 +9,7 @@ $postId = $_GET['id'] ?? '';
 echo '<h2>Commenting</h2>';
 
 
+consoleLog($commentCode, $postId, 'get');
 consoleLog($_POST, 'POST Data');
 
 //Get form data
@@ -22,7 +23,7 @@ $db = connectToDB();
 
 // Set up a query to get all company info
 $query = 'INSERT INTO Comments
-          (id, words, cDate, password)
+          (id, words, cDate, cPass)
           VALUES (?, ?, ?, ?)';
 
 // Attempt to run the query

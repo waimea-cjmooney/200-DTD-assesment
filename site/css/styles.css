@@ -6,7 +6,6 @@
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
-    padding: auto;
 }
 
 body {
@@ -60,7 +59,7 @@ main {
     align-items: center;
     flex: 1;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 400px;
 }
 
 main a {
@@ -183,6 +182,7 @@ li {
     list-style-type: none;
     text-decoration: none;
     padding: 1rem 1rem;
+    word-wrap: break-word
 }
 
 #post-view{
@@ -197,6 +197,7 @@ li {
     margin-left: 0rem;
     text-decoration: none;
     padding: 1rem 1rem;
+    word-wrap: break-word
 }
 
 #post-list img{
@@ -213,6 +214,10 @@ li {
     display: flex;
     width: 100%;
     border-radius: 0.3rem;
+}
+
+#post-view p{
+    margin: 0px;
 }
 
 #post-list a :hover{
@@ -246,6 +251,8 @@ li {
     border-radius: 1rem;
     width: 370px;
     max-width: 100%;
+    font-size: 22px;
+    word-wrap: break-word
 }
 
 
@@ -260,7 +267,8 @@ li {
 
 table{
     margin-bottom: 1rem;
-    width: max-content;
+    width: 100%;
+    max-width: 100%;
     margin: 1rem auto;
     justify-content: space-between;
     gap: 1rem;
@@ -297,6 +305,7 @@ td:first-child, th:first-child {
 
 form {
     width: 100%;
+    max-width: 100%;
     margin: 1rem auto;
     padding: 1rem;
     background-color: #FFE6B8;
@@ -317,6 +326,7 @@ input[type=text], input[type=email], input[type=password]{
     color: #2F4123;
     outline: none;
     border: 2px solid #2F4123;
+    max-width: 100%;
 }
 
 input[type=submit]{
@@ -344,7 +354,7 @@ textarea{
     resize: none;
 }
 
-input[type=text]:focus{
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus{
     border: 3px solid #B7DE7C;
 }
 

@@ -31,7 +31,7 @@ echo '<a href="viewPost.php?id=' . $postId . '">Back</a> <br>';
 
 ?>
 
-<form method = "post" action = <?php echo '"addReport.php?id=' . $postId  . '"' ?> >
+<form method = "post" action = <?php echo '"reportPost.php?id=' . $postId  . '"' ?> >
 
        <label>Email</label>
        <input name = 'email'
