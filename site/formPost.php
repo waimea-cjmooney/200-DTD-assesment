@@ -5,9 +5,9 @@ include 'partials/top.php';
 
 <a href="index.php">Back</a> <br>
 
-<h2>New Post</h2>
-
 <form method = 'post' action = 'addPost.php' enctype="multipart/form-data">
+
+       <h2>New Post</h2>
 
        <label>Title</label>
        <input name = 'title'
@@ -19,8 +19,7 @@ include 'partials/top.php';
        <label>Description</label>
        <textarea name = 'descript'
               required
-              maxlength="250">
-       </textarea>
+              maxlength="250"></textarea>
 
        
        <label>Upload File</label>
@@ -36,6 +35,7 @@ include 'partials/top.php';
        <input name = 'password'
               type = 'password'
               maxlength="25" 
+              oninvalid="this.setCustomValidity('A password is required')"
               required>
 
        <input type="submit" 

@@ -9,7 +9,7 @@ $db = connectToDB();
 consoleLog($db);
 
 // Set up a query to get all uploads
-$query = 'SELECT id, title, uploaded, descript FROM Uploads ORDER BY id DESC';
+$query = 'SELECT id, title, uploaded FROM Uploads ORDER BY id DESC';
 
 // Attempt to run the query
 try {
@@ -39,7 +39,7 @@ foreach ($Uploads as $post) {
     echo  '<h4>Uploaded ' . $post['uploaded'] . '</h4>';
 
     echo  '<h2>' . $post['title'] . '</h2>';
-    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '" alt="Lamborghini Aventador Supervelocce Roadster">';
+    echo  '<img src="load-thing-image.php?id=' . $post['id'] . '" alt="Photo of cat">';
 
     echo  '</li></a>';
 

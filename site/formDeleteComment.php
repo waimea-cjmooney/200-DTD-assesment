@@ -37,9 +37,12 @@ echo '<a href="viewPost.php?id=' . $post["id"] . '">Back</a> <br>';
 
 <form method = "post" action = <?php echo '"deleteComment.php?code=' . $commentCode . '&id=' . $postId . '"' ?> >
 
+        <h2>Delete</h2>
+
        <label>Password</label>
        <input name = 'Password'
               type = 'Password' 
+              oninvalid="this.setCustomValidity('The password is required')"
               required>
 
        <input type="submit" 

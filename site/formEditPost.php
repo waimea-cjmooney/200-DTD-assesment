@@ -48,6 +48,7 @@ echo '<a href="viewPost.php?id=' . $postId . '">Back</a> <br>';
        <label>Password</label>
        <input name = 'password'
               type = 'password' 
+              oninvalid="this.setCustomValidity('The password is required')"
               required>
 
        <input type="submit" 

@@ -3,41 +3,44 @@
 require 'lib/utils.php';
 include 'partials/top.php'; 
 
-$commentCode = $_GET['code'] ?? '';
 $postId = $_GET['id'] ?? '';
+$commentCode = $_GET['code'] ?? '';
 
-echo $postId;
-echo '<h2>Deleting</h2>';
 
-consoleLog($commentCode, $postId, 'get');
+echo '<h2>Commenting</h2>';
+
+
 consoleLog($_POST, 'POST Data');
 
 //Get form data
-$password  = $_POST['Password'];
+$words    = $_POST['words']; 
+$date     = date("Y/m/d");
+$pass     = $_POST['password'];
 
 
 // Connect to database
 $db = connectToDB();
 
 // Set up a query to get all company info
-$query = 'DELETE FROM Comments WHERE code=? AND cPass=?';
+$query = 'UPDATE Comments
+          SET words=?, cDate=?
+          WHERE code=? AND cPass=?';
 
 // Attempt to run the query
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute( [ $commentCode, $password ] );
+    $stmt->execute( [ $words, $date, $commentCode, $pass ] );
     $item = $stmt->fetchAll();
 }
 
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB List Fetch', ERROR);
-    die('There was an error removing data from the database');
+    die('There was an error adding data to the database');
 }
 
 echo '<p>Success<p>';
 
-
-header('location: viewPost.php?id='.$postId);
+header('location: viewPost.php?id=' . $postId);
 
 include 'partials/bottom.php'; 
 

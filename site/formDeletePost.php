@@ -33,13 +33,16 @@ echo '<a href="viewPost.php?id=' . $postId . '">Back</a> <br>';
 
 <form method = "post" action = <?php echo '"deletePost.php?id=' . $postId  . '"' ?> >
 
-       <label>Password</label>
-       <input name = 'Password'
-              type = 'Password' 
-              required>
+    <h2>Delete</h2>
 
-       <input type="submit" 
-              value="Delete" onclick="return confirm(`Delete post? (This cannot be undone. All comments and reports on this post will also be deleted.)`);">
+    <label>Password</label>
+    <input name = 'Password'
+           type = 'Password' 
+           oninvalid="this.setCustomValidity('The password is required')"
+           required>
+
+    <input type="submit" 
+           value="Confirm" onclick="return confirm(`Delete post? (This cannot be undone. All comments and reports on this post will also be deleted.)`);">
 
 </form>
 
