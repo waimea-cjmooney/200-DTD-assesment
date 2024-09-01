@@ -25,7 +25,7 @@ Cat photo sharers love cats, so the system should be nicely designed, possibly w
 
 ### Proposed Solution
 
-I will make a safe website for people to share cat photos and discuss topics surrounding them. The system will include; Photo uploading, commenting, passwords on posts, and post editing.
+I will make a safe website for people to share cat photos and discuss topics surrounding them. The system will include; Photo uploading, commenting, passwords on posts, editing, deleting, and reporting.
 
 -------------------------------------------------
 
@@ -81,8 +81,7 @@ To do this I must look into every photo I personally put onto the website, this 
 
 ### User Interface Design
 
-Place images here that show your *final design* of your UI: layout, colours, etc.
-
+![Image showing final UI draft](developmentImages/FigmaDesign1Colour.png)
 
 -------------------------------------------------
 
@@ -90,11 +89,13 @@ Place images here that show your *final design* of your UI: layout, colours, etc
 
 ### Database Structure
 
-Place a image here that shows the *actual database structure* that you implemented: tables, fields and relationships.
+![Actual database structure](developmentImages/image.png)
 
 ### User Interface Design
 
-Place screenshots and notes here that show your *actual system UI* in action.
+![Image of the final home page](developmentImages/finishedHome.png)
+
+This is the finalised design of the home page
 
 
 -------------------------------------------------
