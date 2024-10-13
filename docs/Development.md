@@ -37,5 +37,5 @@ https://www.figma.com/proto/JuS6LVzlTDKlWxS2UnK0gt/Catphotos-V1?node-id=1-2&t=9i
 
 It's been a while since my last update because of sickness, but today I worked on the Development.md file to fit Mr Copley's requests. I also ended up adding colour to the figma design, It's not finalised but I like it. I sent the design to jess and await a response.
 
-![Coloured version of the UI design](DevelopmentImages/FigmaDesign1Colour.png)
+![Coloured version of the UI design](developmentImages/FigmaDesign1Colour.png)
 
